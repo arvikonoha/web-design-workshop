@@ -1,0 +1,360 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800;900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+hr {
+  color: #1010102a;
+  width: 90%;
+  margin: auto;
+}
+
+button {
+  font-family: "Nunito", sans-serif;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.m-container {
+  padding: 16px;
+}
+
+button.hamburger {
+  background-color: transparent;
+  border: none;
+}
+
+.hamburger {
+  cursor: pointer;
+
+  position: fixed;
+  top: 8px;
+  right: 16px;
+
+  z-index: 3;
+}
+
+.bar {
+  position: relative;
+
+  width: 20px;
+  height: 2px;
+
+  margin: 4px;
+
+  background-color: #374a78;
+
+  transition: all ease 0.2s;
+}
+
+.active .bar:nth-child(2) {
+  opacity: 0;
+}
+
+.active .bar:nth-child(1) {
+  top: 6px;
+  transform: rotate(45deg);
+}
+
+.active .bar:nth-child(3) {
+  top: -6px;
+  transform: rotate(-45deg);
+}
+
+#brand-logo {
+  font-size: x-large;
+  font-weight: 900;
+
+  text-decoration: none;
+
+  color: #374a78;
+}
+
+#main-navbar {
+  position: fixed;
+  right: -100%;
+  top: 0;
+
+  z-index: 2;
+
+  width: 240px;
+  height: 100%;
+  padding: 8px;
+  padding-top: 32px;
+
+  background-color: #fff;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+
+  transition: right ease 0.2s;
+}
+
+#main-navbar.active {
+  right: 0;
+}
+
+#main-navbar ul li {
+  list-style: none;
+}
+
+#main-navbar a {
+  display: block;
+  padding: 12px 16px;
+
+  text-decoration: none;
+  color: #101010b9;
+  font-weight: 800;
+
+  transition: 0.2s ease transform;
+}
+
+#main-navbar a:hover {
+  transform: scale(1.2);
+}
+
+.l-container {
+  padding: 16px;
+}
+
+@media (min-width: 1000px) {
+  #brand-logo {
+    font-size: 2rem;
+  }
+
+  .l-container {
+    width: 80%;
+    margin: 16px auto;
+    padding: 0;
+  }
+
+  .m-container {
+    width: 70%;
+    margin: 16px auto;
+    padding: 0;
+  }
+
+  #main-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  #main-navbar {
+    position: static;
+    box-shadow: none;
+    padding: 0;
+    width: auto;
+  }
+
+  #main-navbar li {
+    display: inline-block;
+  }
+
+  #main-navbar li a {
+    display: inline-block;
+  }
+}
+
+.chip {
+  padding: 8px 16px;
+  border-radius: 50px;
+  display: inline-block;
+  color: #fff;
+  background-color: #374b7891;
+}
+
+.chip.yellow {
+  font-weight: bold;
+  color: #c9970cc2;
+  background-color: #c9960c3d;
+  margin: 4px 0;
+}
+
+#welcome-section {
+  position: relative;
+
+  color: #374a78;
+  border-radius: 40px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+#special-fc {
+  color: #374a78;
+}
+
+#welcome-section img {
+  border-radius: 20px;
+  width: 80%;
+  margin-bottom: 1em;
+}
+
+#welcome-section h1,
+#special-fc h1 {
+  font-size: 2.4em;
+  margin-bottom: 0.5em;
+}
+
+#welcome-section p {
+  font-size: 1.2em;
+  margin-bottom: 2em;
+}
+
+#welcome-section button {
+  text-transform: uppercase;
+  background-color: #ff758f;
+  padding: 1em;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+@media (min-width: 600px) {
+  #welcome-section {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  #welcome-section {
+    color: #fff;
+    text-align: left;
+    font-size: 1rem;
+    padding-left: 6em;
+    padding-top: 6em;
+    height: 520px;
+  }
+
+  #welcome-section h1 {
+    font-size: 3em;
+  }
+
+  #welcome-section p {
+    width: 480px;
+    margin-bottom: 2em;
+  }
+
+  #welcome-section img {
+    position: absolute;
+    height: 480px;
+    width: 100%;
+    object-fit: cover;
+    object-position: top right;
+    background-position: bottom center;
+    filter: brightness(0.9);
+    left: 0;
+    top: 0;
+    z-index: -1;
+  }
+}
+
+#special-fc {
+  font-size: 0.6rem;
+  justify-content: center;
+  margin-top: 2em;
+}
+
+#special-fc ul {
+  padding: 16px;
+}
+
+#special-fc ul li {
+  list-style: none;
+  margin-bottom: 2em;
+}
+
+#special-fc ul li .marker {
+  height: 2em;
+  width: 2em;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  padding: 1em;
+  margin-right: 0.4em;
+
+  background-color: #48b4fd;
+  color: #fff;
+
+  line-height: 2rem;
+  font-size: 0.8em;
+}
+
+#special-fc h1 {
+  font-size: 3em;
+}
+
+#special-fc p {
+  font-size: 1.2em;
+}
+
+#special-fc ul li h1 {
+  font-size: 2em;
+}
+
+@media (min-width: 1000px) {
+  #special-fc {
+    font-size: 0.9rem;
+    justify-content: space-between;
+  }
+}
+
+#features {
+  padding: 64px 0;
+  text-align: center;
+}
+
+#features h1 {
+  text-align: center;
+  color: #2f3c5a;
+  font-size: 2em;
+}
+
+#features p {
+  font-size: 0.8em;
+}
+
+.service-card {
+  padding: 32px;
+  text-align: left;
+}
+
+.service-card h2 {
+  font-size: 1.4em;
+  color: #374a78;
+  margin: 0.5em 0;
+}
+
+@media (min-width: 1000px) {
+  #features h1 {
+    font-size: 3em;
+  }
+
+  #features p {
+    font-size: 1em;
+  }
+}
+
+.service-card p {
+  color: #374b78d0;
+}
+
+.service-card .main-icon {
+  font-size: 3em;
+}

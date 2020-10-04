@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+  padding: 0 0 0 0;
+  /* padding: top right bottom left ;
+  or padding: vertical horizontal; */
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  color: #101010;
+  font-weight: bold;
+}
+
+.flex-wrapper {
+  display: flex;
+}
+
+/* em, %, vh, vw, vmin, vmax, rem */
+/* text-align,font-size, color, text-transform, text-style, text-decoration, letter-spacing */
+
+.article-header h2 {
+  font-size: 1em;
+  margin-bottom: 1em;
+}
+
+.article-header h1 {
+  font-size: 2em;
+  margin: .5em 0;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+/* styles that work after the given width or height */
+@media (min-width:1000px) {
+  .article-header h1 {
+    font-size: 4em;
+  }
+}
+
+.author-details {
+  margin-bottom: 1em;
+}
+
+.article-content p {
+  line-height: 2em;
+  margin-bottom: 2em;
+}
+
+/* 
+
+display: flex; 
+main-axis, cross-axis, 
+justify-content, 
+align-items
+align-content
+flex: grow shrink default-width
+
+*/
+
+.article {
+  padding: 32px;
+  flex: 1 0 50%;
+  width: 50%
+}
+
+#article-section {
+  width: 80%;
+  margin: 16px auto;
+}
+
+/* works up to the given width */
+@media (max-width:1000px) {
+  #article-section {
+    width: 100%;
+    padding: 16px;
+    flex-wrap: wrap-reverse;
+  }
+}
+
+#article-section>img {
+  flex: 1 0 40%;
+  width: 40%;
+}
+
+@media (max-width:800px) {
+  #article-section>img {
+    height: 200px;
+    flex: 1 0 100%;
+    width: 100%;
+  }
+}

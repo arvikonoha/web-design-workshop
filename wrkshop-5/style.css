@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,800&display=swap");
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  width: 80%;
+  margin: 32px auto;
+  height: 90vh;
+
+  background-color: #e0e0e059;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.greeting {
+  font-size: 0.8em;
+  margin-top: 3em;
+  color: #697480;
+  font-style: italic;
+}
+
+.heart {
+  height: 64px;
+  width: 64px;
+
+  background-color: #b2c1cf;
+
+  transform: rotate(-45deg);
+
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-name: beat;
+  animation-fill-mode: forwards;
+}
+
+.heart::after,
+.heart::before {
+  content: "";
+
+  display: block;
+  height: inherit;
+  width: inherit;
+  border-radius: 50%;
+
+  background: inherit;
+}
+
+.heart::after {
+  transform: translate(50%, -100%);
+}
+
+.heart::before {
+  transform: translate(0, -50%);
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1) rotate(-45deg);
+  }
+
+  50% {
+    transform: scale(0.9) rotate(-45deg);
+  }
+}

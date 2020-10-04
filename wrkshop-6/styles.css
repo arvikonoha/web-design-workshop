@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;800&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  background-color: #f7f8f9;
+}
+
+.flex-wrapper {
+  display: flex;
+}
+
+form {
+
+  margin: 3rem 0;
+  background-color: #fff;
+  width: 480px;
+  padding: 32px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, .2);
+}
+
+hr {
+  margin-bottom: 1em;
+  color: #3f545a3a;
+}
+
+form h1 {
+  font-size: 2.4rem;
+  margin-bottom: .5em;
+  color: #fd5353;
+}
+
+form p {
+  margin-bottom: 1em;
+  color: #252a30c5;
+}
+
+.input-control,
+select {
+  margin-bottom: 2em;
+}
+
+.input-control label,
+form legend {
+  font-weight: bold;
+  margin-bottom: .2em;
+  display: block;
+  color: #323247cb;
+}
+
+
+.input-control input[type="text"],
+.input-control input[type="email"] {
+  font-size: 1em;
+  border: none;
+  background-color: #f7f8f9;
+  border: .2em solid #d6e4e8;
+  border-radius: 5px;
+}
+
+.input-control input[type="text"],
+.input-control input[type="email"],
+option,
+select {
+  padding: .4em;
+  width: 100%;
+
+}
+
+select {
+  border: 1px solid #10101025;
+}
+
+.input-control input[type="radio"],
+.input-control input[type="checkbox"] {
+  display: inline-block;
+
+  margin: .5em 0;
+  margin-left: 1em;
+  font-size: .8em;
+}
+
+
+form fieldset {
+  border: none;
+  padding: 1em 0;
+  color: #252a30c0;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+
+  width: 100%;
+  padding: .5em 1em;
+
+  background-color: #fd5353;
+
+  color: #fff;
+  font-size: 1em;
+  font-weight: bold;
+
+  border-radius: 5px;
+  border: none;
+}

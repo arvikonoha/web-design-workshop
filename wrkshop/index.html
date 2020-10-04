@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Welcome</title>
+  </head>
+  <body>
+    <header class="m-container" id="main-header">
+      <a href="/" id="brand-logo">FamilyCare</a>
+      <button class="hamburger">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </button>
+      <nav id="main-navbar">
+        <ul>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li>
+            <a href="#appointment">Appointment</a>
+          </li>
+          <li>
+            <a href="#blog">Blog</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="l-container" id="welcome-section">
+      <img src="./welcome-img.jpg" alt="" />
+      <h1>
+        Health care for <br />
+        Whole Family
+      </h1>
+      <p>
+        I believe prevention is better than cure and regular health screening is
+        the key to your well-being. The earlier a problem is identified.
+      </p>
+      <button>Make an Appointment</button>
+    </section>
+    <section class="m-container flex-wrapper" id="special-fc">
+      <div style="flex: 0 1 400px" class="flex-item">
+        <p class="chip yellow">Special facilities</p>
+        <h1>Special facilities for our patients</h1>
+      </div>
+      <div style="flex: 0 1 360px" class="flex-item">
+        <ul>
+          <li>
+            <h1 style="display: flex; align-items: center">
+              <div class="marker"><i class="fas fa-anchor"></i></div>
+              Accepts insurance plan
+            </h1>
+            <p>The earlier problem is detected the more effectively solved</p>
+          </li>
+          <li>
+            <h1 style="display: flex; align-items: center">
+              <div class="marker"><i class="fas fa-globe"></i></div>
+              Has online scheduling
+            </h1>
+            <p>The earlier problem is detected the more effectively solved</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr />
+    <section id="features" class="m-container">
+      <div class="chip yellow">Offer services</div>
+      <h1>Services for you and your family</h1>
+      <div
+        style="flex-wrap: wrap; align-items: center; padding: 32px"
+        class="flex-wrapper"
+      >
+        <div style="flex: 1 0 300px" class="flex-item service-card">
+          <i style="color: #12a871af" class="fas fa-seedling main-icon"></i>
+          <h2>Nutrition advice</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt
+            non sit quam tempore fugit error est magnam ea, vel dolore!
+          </p>
+        </div>
+        <div style="flex: 1 0 300px" class="flex-item service-card">
+          <i
+            style="color: #124ea89f"
+            class="fas fa-hourglass-start main-icon"
+          ></i>
+          <h2>Aged assessment & Care</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt
+            non sit quam tempore fugit error est magnam ea, vel dolore!
+          </p>
+        </div>
+        <div style="flex: 1 0 300px" class="flex-item service-card">
+          <i style="color: #a81212a8" class="fas fa-route main-icon"></i>
+          <h2>Travel advice</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt
+            non sit quam tempore fugit error est magnam ea, vel dolore!
+          </p>
+        </div>
+        <div style="flex: 1 0 300px" class="flex-item service-card">
+          <i style="color: #129ea87a" class="fas fa-weight main-icon"></i>
+          <h2>Weight Control Management</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt
+            non sit quam tempore fugit error est magnam ea, vel dolore!
+          </p>
+        </div>
+        <div style="flex: 1 0 300px" class="flex-item service-card">
+          <i style="color: #613b039f" class="fas fa-clipboard main-icon"></i>
+          <h2>Annual Health Checks</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt
+            non sit quam tempore fugit error est magnam ea, vel dolore!
+          </p>
+        </div>
+        <div style="flex: 1 0 300px" class="flex-item service-card">
+          <i style="color: #f8a304" class="fas fa-wave-square main-icon"></i>
+          <h2>Diabetes Management</h2>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt
+            non sit quam tempore fugit error est magnam ea, vel dolore!
+          </p>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <script>
+      const mainNavbar = document.getElementById("main-navbar");
+      const hamburger = document.querySelector(".hamburger");
+
+      hamburger.addEventListener("click", (event) => {
+        mainNavbar.classList.toggle("active");
+        hamburger.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

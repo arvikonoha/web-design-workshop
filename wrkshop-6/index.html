@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Welcome</title>
+  </head>
+  <body style="justify-content: center" class="flex-wrapper">
+    <form action="index.php">
+      <h1>Event registeration</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, est.
+      </p>
+      <hr />
+      <div style="flex-wrap: wrap" class="flex-wrapper">
+        <div style="flex: 1 0 200px" class="input-control half-input">
+          <label for="first">First name</label>
+          <input
+            type="text"
+            name="firstname"
+            placeholder="Enter the first name"
+            id="firstname"
+          />
+        </div>
+        <div
+          style="flex: 1 0 200px; padding: 0 4px"
+          class="input-control half-input"
+        >
+          <label for="lastname">Last name</label>
+          <input
+            type="text"
+            name="lastname"
+            placeholder="Enter the last name"
+            id="lastname"
+          />
+        </div>
+      </div>
+      <div class="input-control">
+        <label for="email">Email</label>
+        <input
+          placeholder="Enter the email"
+          type="email"
+          id="email"
+          name="email"
+        />
+      </div>
+      <div class="input-control">
+        <fieldset>
+          <legend>Domain of interest</legend>
+          <input type="checkbox" name="domain" value="Web development" /> Web
+          development
+          <input type="checkbox" name="domain" value="Android" /> Android <br />
+          <input type="checkbox" name="domain" value="Machine learning" />
+          Machine learning
+          <input type="checkbox" name="domain" value="Cloud computing" /> Cloud
+          computing <br />
+        </fieldset>
+      </div>
+      <div class="input-control">
+        <fieldset>
+          <legend>Branch</legend>
+          <input type="radio" name="domain" value="Computer Science" checked />
+          Computer Science <br />
+          <input type="radio" name="domain" value="Mechanical" /> Mechanical
+          <br />
+          <input type="radio" name="domain" value="Information Science" />
+          Information Science <br />
+          <input
+            type="radio"
+            name="domain"
+            value="Elecronics and Communication"
+          />
+          Elecronics and Communication <br />
+          <input type="radio" name="domain" value="Electrical" /> Electrical
+          <br />
+          <input type="radio" name="domain" value="Civil" /> Civil <br />
+
+          <input type="radio" name="domain" value="Bio technology" /> Bio
+          technology <br />
+        </fieldset>
+      </div>
+      <div class="input-control">
+        <label for="semester">Semester</label>
+        <select name="semester" id="semester">
+          <option value="First">First</option>
+          <option value="Third">Third</option>
+          <option value="Fifth">Fifth</option>
+          <option value="Seventh">Seventh</option>
+        </select>
+      </div>
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
